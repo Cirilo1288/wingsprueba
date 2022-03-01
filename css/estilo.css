@@ -1,0 +1,433 @@
+h3{
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+}
+p{
+	font-family: 'Antonio', sans-serif;
+	font-size: 16px;
+}
+li{
+	list-style-type: none;
+	font-family: 'Antonio', sans-serif;
+	padding: 10px;
+	font-size: 16px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: darkred;
+	font-family: 'Anton', sans-serif;
+
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 40px;
+}
+
+ul{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 35px;
+}
+
+header{
+	position: sticky;
+	top: 0px;
+	background-color: white;
+}
+
+
+/* INICIO GRID CONTENEDOR PADRE HOME*/
+
+.contenedor-padreHome{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+header{
+	grid-area: header;
+}
+main{
+	grid-area: main;
+}
+footer{
+	grid-area: footer;
+}
+
+/* CIERRE GRID CONTENEDOR PADRE HOME*/
+
+/* INICIO GRID HEADER */
+.headerHome{
+	display: grid;
+	grid-template-areas: 
+	"logoHeader nav";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	height: 100px;
+}
+
+.logoHeader{
+	grid-area: logoHeader;
+}
+.nav{
+	grid-area: nav;
+}
+
+/* CIERRE GRID HEADER */
+
+
+/* INICIO GRID MAIN HOME*/
+
+.mainHome{
+	display: grid;
+	grid-template-areas:
+	"img1 img2"
+	"frase logoblack"
+	"img3 img3"
+	"img4 frase2"
+	"img6 img6";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto;
+}
+
+.img1{
+	grid-area: img1;
+}
+.img2{
+	grid-area: img2;
+}
+.img3{
+	grid-area: img3;
+}
+.img4{
+	grid-area: img4;
+}
+.frase2{
+	grid-area: frase2;
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	color: black;
+	background-color: white;
+	width: 90%;
+	margin: 10px;
+	text-align: left;
+	align-self: center;
+	line-height: 100px;
+}
+
+.img6{
+	grid-area: img6;
+}
+.frase{
+	grid-area: frase;
+	font-family: 'Anton', sans-serif;
+	font-size: 60px;
+	color: black;
+	background-color: white;
+	width: 90%;
+	margin: 10px;
+	text-align: right;
+	align-self: center;
+	line-height: 65px;
+}
+.logoblack{
+	grid-area: logoblack;
+	height: 300px;
+}
+.logoblack{
+	justify-self: center;
+}
+
+/* CIERRE GRID MAIN HOME */
+
+/* INICIO GRID FOOTER */
+.footerHome{
+	display: grid;
+	grid-template-areas: 
+	"fraseFooter redesFooter";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+}
+
+.redesFooter{
+	grid-area: redesFooter;
+}
+.contactoFooter{
+	grid-area: fraseFooter;
+}
+
+/* CIERRE GRID FOOTER */
+
+.redesFooter{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.iconos{
+	padding: 1px;
+	width: 50px;
+	height: 50px;
+}
+
+.fraseFooter{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-align: left;
+}
+
+.img1{
+	width: 100%;
+}
+.img2{
+	width: 100%;
+}
+.img3{
+	width: 100%;
+}
+.img4{
+	width: 100%;
+}
+.img5{
+	width: 100%;
+}
+.img6{
+	width: 100%;
+}
+
+/* INICIO GRID MAIN BICIS */
+
+.mainBicis{
+	display: grid;
+	grid-template-areas: 
+	"chisel chiselComp"
+	"rockhopperElite rockhopperExpert"
+	"tarmac allez"
+	"epicComp epicExpert";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto;
+}
+.chisel{
+	grid-area: chisel;
+}
+.chiselComp{
+	grid-area: chiselComp;
+}
+.rockhopperExpert{
+	grid-area: rockhopperExpert;
+}
+.rockhopperElite{
+	grid-area: rockhopperElite;
+}
+.tarmac{
+	grid-area: tarmac;
+}
+.allez{
+	grid-area: allez;
+}
+.epicComp{
+	grid-area: epicComp;
+}
+.epicExpert{
+	grid-area: epicExpert;
+}
+
+/* CIERRE GRID MAIN BICIS */
+
+.chisel{
+	width: 100%;
+}
+.chiselComp{
+	width: 100%;
+}
+.rockhopperExpert{
+	width: 100%;
+}
+.rockhopperElite{
+	width: 100%;
+}
+.tarmac{
+	width: 100%;
+}
+.allez{
+	width: 100%;
+}
+.epicComp{
+	width: 100%;
+}
+.epicExpert{
+	width: 100%;
+}
+
+
+/* INICIO MEDIA QUERIE HEADER MOBILE */
+
+@media only screen and (max-width: 768px) {
+	.headerHome {
+		display: grid;
+		grid-template-areas: 
+		"logoHeader"
+		"nav";
+		grid-template-columns: 100%;
+		grid-template-rows: auto 100px;}
+
+}
+
+header{
+	position: sticky;
+	top: 0px;
+	background-color: white;
+	
+}
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 0px;
+}
+.logoHeader{
+	display: flex;
+	justify-content: center;
+}
+
+ul{
+	padding-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* CIERRE MEDIA QUERIE HEADER MOBILE */
+
+
+/* INICIO MEDIA QUERIE MAIN MOBILE */
+
+@media only screen and (max-width: 768px) {
+	.mainHome {
+		display: grid;
+		grid-template-areas:
+		"img1"
+		"img2"
+		"frase" 
+		"logoblack"
+		"img3"
+		"img4" 
+		"frase2"
+		"img6";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto auto auto auto auto;}
+
+}
+.frase{
+	text-align: center;
+}
+.frase2{
+	text-align: center;
+}
+
+/* CIERRE MEDIA QUERIE MAIN MOBILE */
+
+/* INICIO MEDIA QUERIE FOOTER MOBILE */
+
+@media only screen and (max-width: 768px) {
+	.redesFooter h3{
+		display: none;}
+}
+
+/* CIERRE MEDIA QUERIE FOOTER MOBILE */
+
+
+/*CSS BICIS */
+
+
+/* INICIO GRID MAIN BICIS */
+
+.mainBicis{
+	display: grid;
+	grid-template-areas: 
+	"modelos modelos"
+	"chisel chiselComp"
+	"rockhopperelite rockhopperexpert"
+	"allez tarmac"
+	"epicComp epicExpert";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px auto auto auto auto;}
+}
+
+.modelos{
+	grid-area: modelos;
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.chisel{
+	grid-area: chisel;
+}
+.chiselcomp{
+	grid-area: chiselComp;
+}
+.rockhopperElite{
+	grid-area: rockhopperelite;
+}
+.rockhopperExpert{
+	grid-area: rockhopperexpert;
+}
+.allez{
+	grid-area: allez;
+}
+.tarmac{
+	grid-area: tarmac;
+}
+.epicComp{
+	grid-area: epicComp;
+}
+.epicExpert{
+	grid-area: epicExpert;
+}
+
+/* CIERRE GRID MAIN BICIS */
+
+
+/* INICIO MEDIA QUERIE MOBILE MAIN BICIS */
+
+@media only screen and (max-width: 768px) {
+	.mainBicis {
+		display: grid;
+		grid-template-areas: 
+		"modelos"
+		"chisel"
+		"chiselComp"
+		"rockhopperelite"
+		"rockhopperexpert"
+		"allez"
+		"tarmac"
+		"epicComp"
+		"epicExpert";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto auto auto auto auto auto;}
+
+}
+
+/* CIERRE MEDIA QUERIE MOBILE MAIN BICIS */
+
+nav{
+	height: 50px;
+}
+
+.headerHome{
+	height: 150px;
+}
+
+
